@@ -20,10 +20,18 @@
     	this.skillExperience = _getSkillExperience(resumeSet);
 		}
 
-		getDateDifference: _getDateDifference
+		getDateDifference () {
+			_getDateDifference();
+		}
 	}
 
-	function _getSkillExperience (resumeSet) {
+	function _getSkillExperience (set) {
+
+		if (!set || !set.isArray) return;
+
+		set.forEach(function (position) {
+
+		});
 
 	}
 
