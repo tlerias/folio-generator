@@ -20,8 +20,8 @@
 				description: '<b>Angular</b>',
 				skills: ['Angular', 'React'],
 				companyLogoUrl: null,
-				startDate: '',
-				endDate: ''
+				startDate: 'August 10, 2014',
+				endDate: 'January 1, 2016'
 
 			},
 			{
@@ -29,7 +29,7 @@
 			}
 		];
 		const folioElement = document.getElementById('folio');
-		let folio = new window.Folio(); 
+		let folio = new window.Folio(folioElement, resumeItems); 
 
 		console.log(folioElement, folio)
 
